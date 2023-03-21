@@ -1,0 +1,20 @@
+server:
+  port: 7080
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mall?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: 152162gcp
+  redis:
+    host: 192.168.222.131
+    port: 6379
+  application:
+    name: security
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:/mapper/*.xml
+
+
